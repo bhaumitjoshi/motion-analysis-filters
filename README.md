@@ -27,3 +27,13 @@ The script visualizes:
 
 pip install -r requirements.txt  
 python main.py
+
+## Example Output
+
+### Position Filtering
+
+![Position Filtering](motion_filter_output.png)
+
+### Velocity and Acceleration
+
+![Derived Quantities](motion_derivatives_output.png)
