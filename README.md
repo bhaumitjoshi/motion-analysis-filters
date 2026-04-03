@@ -1,17 +1,29 @@
-# Motion Analysis and Filters
+# Motion Analysis and Filtering
 
-This project demonstrates basic motion analysis from noisy 1D position data.
+This project demonstrates motion smoothing and noise reduction in 1D tracked data using temporal filtering techniques.
 
-## Concepts Used
+Noisy position measurements are processed using multiple filters to obtain smooth motion estimates, followed by computation of velocity and acceleration.
 
-- Velocity estimation
-- Acceleration estimation
-- Moving average filtering
-- Savitzky-Golay filtering
-- Simple 1D Kalman filtering
+## Concept
+
+Real-world tracking data is often noisy.  
+Filters help recover the underlying motion by reducing noise while preserving important trends.
+
+## Methods Used
+
+- Moving Average Filter
+- Savitzky-Golay Filter
+- Simple 1D Kalman Filter
+- Numerical differentiation for velocity and acceleration
+
+## Output
+
+The script visualizes:
+
+- True vs Noisy vs Filtered Position
+- Estimated Velocity and Acceleration
 
 ## How to Run
 
-```bash
-pip install -r requirements.txt
+pip install -r requirements.txt  
 python main.py
